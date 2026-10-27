@@ -90,7 +90,7 @@ async function fetchAnalysis(
 }
 
 function formatNumber(value: number | null, decimals = 1): string {
-  if (value === null || !Number.isFinite(value)) return "?€”";
+  if (value === null || !Number.isFinite(value)) return "—";
 
   return value.toLocaleString("en-GB", {
     minimumFractionDigits: decimals,
