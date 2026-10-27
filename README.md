@@ -8,6 +8,15 @@ Wind generation is variable, so electricity buyers need to understand how foreca
 
 The default analysis covers **1–31 January 2026**, with a configurable decision lead time of **24 hours**.
 
+## Live Demo
+
+- **Live Dashboard:** https://wind-forecast-dashboard-chi.vercel.app/
+- **Backend API:** https://wind-forecast-dashboard-4nju.onrender.com
+- **API Documentation:** https://wind-forecast-dashboard-4nju.onrender.com/docs
+- **Health Check:** https://wind-forecast-dashboard-4nju.onrender.com/api/v1/health
+
+The deployed application compares UK wind generation forecasts with actual generation using Elexon BMRS data. It presents forecast accuracy metrics, data coverage, hourly generation charts, and the largest forecast errors to support day-ahead electricity procurement analysis.
+
 ## Key Features
 
 - Interactive dashboard for a configurable delivery-date range and decision lead time.
@@ -290,9 +299,17 @@ AI assistance does not replace validation against the source data or independent
 
 ## Deployment
 
-The application is containerized and can be run locally using Docker Compose.
+The application is deployed with a Vercel frontend and a Render-hosted FastAPI backend.
 
-**Public deployment URL:** To be added after deployment and verification.
+ Frontend: https://wind-forecast-dashboard-chi.vercel.app/
+
+ Backend: https://wind-forecast-dashboard-4nju.onrender.com
+
+ API documentation: https://wind-forecast-dashboard-4nju.onrender.com/docs
+
+ Health check: https://wind-forecast-dashboard-4nju.onrender.com/api/v1/health
+
+The deployed dashboard was verified to load the January 2026 analysis, including forecast accuracy metrics, hourly charts, and interval-level results.
 
 ## Demo
 
