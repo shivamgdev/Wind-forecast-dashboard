@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "standard": {
+      "format": "%(levelname)s: %(name)s: %(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "formatter": "standard",
+      "stream": "ext://sys.stderr"
+    }
+  },
+  "root": {
+    "level": "INFO",
+    "handlers": [
+      "console"
+    ]
+  },
+  "loggers": {
+    "app.analysis_service": {
+      "level": "INFO",
+      "handlers": [
+        "console"
+      ],
+      "propagate": false
+    },
+    "app.elexon_client": {
+      "level": "INFO",
+      "handlers": [
+        "console"
+      ],
+      "propagate": false
+    }
+  }
+}
